@@ -1,11 +1,11 @@
 package main;
 
+import main.Ejercicio_01_insert.InsertBST;
 import main.Materia.Controllers.ArbolBinario;
 import main.Materia.Models.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
 
         ArbolBinario arbolBinario = new ArbolBinario();
         Node nodeRoot = new Node(1);
@@ -28,5 +28,15 @@ public class App {
         arbolBinario.postOrderRecursivo(nodeRoot);
         System.out.println();
         arbolBinario.inOrderRecursivo(nodeRoot);
+
+
+         InsertBST bstInsertion = new InsertBST();
+        int[] values = { 5, 3, 7, 2, 4, 6, 8 };
+
+        Node root = null;
+        for (int value : values) {
+            root = bstInsertion.insert(root, value);
+        }
+
     }
 }
