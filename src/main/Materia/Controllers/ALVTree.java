@@ -99,9 +99,9 @@ public class ALVTree {
     }
 
     private Node rightRotate(Node nodeR) {
-        System.out.println("LeftRotate on: " + nodeR.getValue() + ", Balance: " + getBalance(nodeR));
+        System.out.println("RightRotate on: " + nodeR.getValue() + ", Balance: " + getBalance(nodeR));
         Node x = nodeR.getLeft();
-        System.out.println("New root after left rotate: " + x.getValue());
+        System.out.println("New root after Right rotate: " + x.getValue());
         Node temp = x.getRight();
 
         // rotacion
