@@ -1,6 +1,6 @@
 Geovanni Zuñiga y Juan Portilla
 
-Version: 2.2.1
+Version: 2.2.2
 
 -Ejercicio 01 insert
 El metodo recibe un Node y un valor, primero se evalua si el nodo esta vacio, si lo esta devuelve un nuevo nodo con valor el parametro que llego. Si es que no, pasa a comprobar si el valor del parametro es menor que el valor que tiene el nodo, si es asi ingresa a la izquierda del nodo y al contrario ingresa a la derecha. Para ingresar, el valor del nodo que ingresa es obtenido mediante el llamado de la misma funcion pero obteniendo la derecha u izquierda respectivamente enviando como valor del nodo y el valor que del parametro que ingreso al metodo.
