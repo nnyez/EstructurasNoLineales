@@ -1,6 +1,7 @@
 package main;
 
 import main.Ejercicio_01_insert.InsertBST;
+import main.Materia.Controllers.ALVTree;
 import main.Materia.Controllers.ArbolBinario;
 import main.Materia.Models.*;
 
@@ -29,14 +30,19 @@ public class App {
         System.out.println();
         arbolBinario.inOrderRecursivo(nodeRoot);
 
-
-         InsertBST bstInsertion = new InsertBST();
-        int[] values = { 5, 3, 7, 2, 4, 6, 8 };
+        InsertBST bstInsertion = new InsertBST();
+        int[] values1 = { 5, 3, 7, 2, 4, 6, 8 };
 
         Node root = null;
-        for (int value : values) {
-            root = bstInsertion.insert(root, value);
+        for (int v : values1) {
+            root = bstInsertion.insert(root, v);
         }
 
+        ALVTree tree = new ALVTree();
+        int[] values = { 10, 20, 15, 24, 9, 8, 21, 23, 50, 25 };
+
+        for (int value : values) {
+            tree.insert(value);
+        }
     }
 }
